@@ -11,6 +11,6 @@ app.use("/products",productRoutes)
 
 app.use("/cart",cartRoutes)
 
-app.listen(port,()=>[
+app.listen(port,()=>{
     console.log(`Server is running on ${port}`)
-])
+})

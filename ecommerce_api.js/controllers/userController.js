@@ -1,5 +1,7 @@
+const path = require("path")
+
 const getAllUsers = (req,res)=>{
-    res.send("Fetching all users")
+    res.sendFile(path.join(__dirname,"..","view","getUser.html"))
 }
 
 const addUser = (req,res)=>{

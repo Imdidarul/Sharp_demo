@@ -5,7 +5,9 @@ const getAllProducts = (req,res)=>{
 }
 
 const addProduct = (req,res)=>{
-    res.send( "Adding a new product")
+    const data = req.body
+    console.log(`Added ${data.productName}`)
+    res.json({value:data.productName})
 }
 
 const getProductById = (req,res)=>{
